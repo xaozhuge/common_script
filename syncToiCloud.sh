@@ -23,4 +23,5 @@ read username password <<< `cat server.txt |grep localmysql|awk -F ':' '{print $
 rm -f $basepath$local_filename
 #移动到icloud目录
 /bin/mv $basepath$tar_filename /Users/peiwei/Library/Mobile\ Documents/com~apple~CloudDocs
-du -sh /Users/peiwei/Library/Mobile\ Documents/com~apple~CloudDocs/$tar_filename
+/usr/bin/du -sh /Users/peiwei/Library/Mobile\ Documents/com~apple~CloudDocs/$tar_filename
+
