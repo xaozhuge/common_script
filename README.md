@@ -4,10 +4,12 @@
 ### 2、fileWithDir.sh
 ##### 查找满足某个目录的文件
 ### 3、syncToiCloud.sh
-##### 备份本机数据并移动到icloud目录下
+##### mac  备份mysql数据 并移动到icloud目录下
 ### 4、dirWithSpace.sh
 ##### 含有空格的目录处理
 ### 5、sudoNoInput.sh
 ##### 获取当前脚本的绝对路径 和 使用 sudo 不输入密码
+### 6、mysql_bak.sh
+##### linux 备份mysql数据
 
 
