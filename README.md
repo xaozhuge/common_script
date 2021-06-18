@@ -13,5 +13,7 @@
 ##### linux 备份mysql数据
 ### 7、logbandwidth.sh
 ##### iftop日志记录
+### 8、mysqlquery.sh
+##### 执行mysql语句
 
 
