@@ -15,5 +15,7 @@
 ##### iftop日志记录
 ### 8、mysqlquery.sh
 ##### 执行mysql语句
+### 9、searchdirfile.sh
+##### 搜索含有关键词的文件和目录
 
 
