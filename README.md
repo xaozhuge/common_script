@@ -17,5 +17,7 @@
 ##### 执行mysql语句
 ### 9、searchdirfile.sh
 ##### 搜索含有关键词的文件和目录
+### 10、mongolog_date.sh
+##### mongo日志备份
 
 
