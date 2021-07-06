@@ -10,7 +10,7 @@
 ### 5、sudoNoInput.sh
 ##### 获取当前脚本的绝对路径 和 使用 sudo 不输入密码
 ### 6、mysql_bak.sh
-##### linux 备份mysql数据
+##### linux 备份mysql数据 并保留N天的数据
 ### 7、logbandwidth.sh
 ##### iftop日志记录
 ### 8、mysqlquery.sh

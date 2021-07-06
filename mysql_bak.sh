@@ -21,6 +21,23 @@ cd $basepath
 rm -f $basepath$local_filename
 /usr/bin/du -sh $basepath$tar_filename
 
+
+#精确时间
+detailtime=`date +%Y-%m-%d#%H:%M:%S`
+#定义删除文件的目录
+dir=/alidata/backup/mysql/
+#定义修改时间n天以上的删除
+daynum=30
+
+#查找目录下N天以上的文件
+for filename in `find $dir -mtime +$daynum -name '*.tar.gz'`; do
+	#输出日志
+    echo $filename '##备份文件删除时间##'$detailtime >> $dir/delete.log
+    #删除对应的文件
+    #rm -f $filename
+    du -sh $filename
+done
+
 #部署定时任务
 #0 * * * * /bin/sh /alidata/www/script.com/mysql_bak.sh  >> /alidata/log/crontab/mysql_bak.log 2>&1
 
