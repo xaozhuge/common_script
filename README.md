@@ -19,5 +19,7 @@
 ##### 搜索含有关键词的文件和目录
 ### 10、mongolog_date.sh
 ##### mongo日志备份
+### 11、delete_ontime.sh
+##### 定时删除目录下的文件
 
 
