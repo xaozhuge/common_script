@@ -1,0 +1,17 @@
+/alidata/log/mysql/error.log {
+        create 600 mysql mysql #自动创建新的文件
+        dateext #切割后的文件以日期格式
+        notifempty #若日支为空，不进行轮替
+        daily #分割频率按天
+        rotate 30 #保留30个文件
+        missingok #如果日志文件不存在，忽视错误信息
+        compress #压缩
+        olddir /alidata/log/mysql/old_errorlog #日志放入指定目录
+    postrotate
+        if test -x /alidatabak/server/mysql/bin/mysqladmin && \
+           /alidatabak/server/mysql/bin/mysqladmin ping -uroot -pPASSWORD -S /tmp/mysql.sock &>/dev/null
+        then
+           /alidatabak/server/mysql/bin/mysqladmin flush-logs -uroot -pPASSWORD -S /tmp/mysql.sock
+        fi
+    endscript
+}
