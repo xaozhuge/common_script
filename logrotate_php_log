@@ -1,0 +1,15 @@
+/alidata/log/php/*log* {
+    create  644 root root
+    dateext
+    notifempty
+    daily
+    rotate 30
+    missingok
+    delaycomproess
+    compress
+    olddir /alidata/log/php/history_log
+    sharedscripts
+    postrotate
+        /usr/bin/kill -USR1 `cat /alidata/server/php/var/run/php-fpm.pid`
+    endscript
+}
