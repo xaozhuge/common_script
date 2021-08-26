@@ -25,5 +25,7 @@
 ##### 通过git生成两个版本之间/两个分支之间变更的文件
 ### 13. logrotate_mysql_errorlog
 ##### 使用logrotate 分割mysql的错误日志
+### 13. project_start.sh
+##### 项目启动脚本
 
 
