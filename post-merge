@@ -1,0 +1,30 @@
+#/bin/bash
+detailtime=`date +%Y-%m-%d#%H:%M:%S`
+runtimelog=./git.log
+echo $detailtime >> $runtimelog
+echo "执行 git pull" >> $runtimelog
+
+#修改项目权限
+chmod -R 755 ./*  2>/dev/null >> $runtimelog
+if [ $? -eq 0 ]; then
+	echo "chmod success" >> $runtimelog
+else
+	echo "chmod fail"    >> $runtimelog
+fi
+
+#修改项目所属
+chown -R www:www ./*   2>/dev/null >> $runtimelog
+if [ $? -eq 0 ]; then
+	echo "chown success" >> $runtimelog
+else
+	echo "chown fail"    >> $runtimelog
+fi
+
+#清除字段缓存
+rm -rf ./Application/Runtime/*  2>/dev/null >> $runtimelog
+if [ $? -eq 0 ]; then
+	echo "clear cache success" >> $runtimelog
+else
+	echo "clear cache fail" >> $runtimelog
+fi
+echo   >> $runtimelog

@@ -29,5 +29,7 @@
 ##### 项目启动脚本
 ### 15. project_stop.sh
 ##### 项目停止脚本
+### 16. post-merge
+##### git pull 回调的脚本
 
 
