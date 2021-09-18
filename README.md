@@ -31,5 +31,7 @@
 ##### 项目停止脚本
 ### 16. post-merge
 ##### git pull 回调的脚本
+### 17. mysql_backup.sh
+##### linux 备份mysql数据 并保留N天的数据
 
 
