@@ -5,6 +5,8 @@ cd /alidata/log/php/fail;
 
 for file in `ls|grep sql_err`; do
 	/usr/bin/sed -i '/tikv restarts/d' $file;
+	/usr/bin/sed -i '/MySQL server has gone away/d' $file;
+	/usr/bin/sed -i '/Serialization failure/d' $file;
 	count=`cat $file|wc -l`
 	if [ $count -eq 0 ]; then
 		/usr/bin/rm -f $file
