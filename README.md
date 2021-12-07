@@ -35,5 +35,7 @@
 ##### linux 备份mysql数据 并保留N天的数据
 ### 18. checkport.sh
 ##### mac校验远端服务器的端口
+### 19. autoerr.sh
+##### 处理错误日志
 
 
