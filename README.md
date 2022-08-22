@@ -45,5 +45,7 @@
 ##### 进度执行百分比
 ### 23. checkupdate.sh
 ##### 检查是否更新
+### 24. deleteRuntime.sh
+##### 根据文件的更新时间删除Runtime
 
 
